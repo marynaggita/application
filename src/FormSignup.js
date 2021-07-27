@@ -112,6 +112,32 @@ const FormSignup = ({submitForm}) => {
                         />
                         {errors.date && <p>{errors.date}</p>}
                 </div>
+                
+                <div className="radio-buttons">
+                    <label htmlFor='gender' className='form-label'>Gender</label>
+                   <div className='form-input'>  
+                   
+                    Male
+                <input
+                
+                    id="male"
+                    value="male"
+                    name="gender"
+                    type="radio"
+                    onChange={handleChange}
+                />
+                Female
+             <input
+             
+                id="female"
+                value="female"
+                name="gender"
+                type="radio"
+                onChange={handleChange}
+            />
+            </div>
+            </div>
+                
                 <button className='form-input-btn'
                 type='submit'>
                     Sign up

@@ -45,6 +45,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: auto;
   }
   /* @media screen and (max-width: 768px) {
     .form {
@@ -64,7 +65,15 @@
     margin-bottom: 0;
     width: 80%;
   }
-  
+  .radio-buttons {
+    margin-bottom: 0;
+    width: 80%;
+  }
+  .radio-buttons p {
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+    color: #f00e0e;
+  }
   .form-inputs p {
     font-size: 0.7rem;
     margin-top: 0.5rem;

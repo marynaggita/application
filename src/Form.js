@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import FormSignup from './FormSignup';
 import Dashboard from './Dashboard';
 import './Form.css'
+import ScrollToTop from './ScrollToTop';
 
 const Form = () => {
     const [isSubmited, setIsSubmited] = useState(false)
@@ -11,6 +12,7 @@ const Form = () => {
     }
     return (
         <>
+        <ScrollToTop />
         {!isSubmited ? <FormSignup submitForm={submitForm} /> : <Dashboard />}
         </>
     )
