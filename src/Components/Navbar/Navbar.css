@@ -137,7 +137,10 @@
     color: #fff;
     font-size: 2rem;
   } */
-
+    .img{
+    color: #fff;
+    font-size: 2rem;
+  } 
   .nav-links-mobile {
     display: block;
     text-align: center;

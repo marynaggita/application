@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import FormSignup from './FormSignup';
-import Dashboard from './Dashboard';
+import FormSignup from './FormSignup'
+import Dashboard from '../Dashboard/Dashboard';
 import './Form.css'
-import ScrollToTop from './ScrollToTop';
+import ScrollToTop from '../../ScrollToTop';
 
 const Form = () => {
     const [isSubmited, setIsSubmited] = useState(false)

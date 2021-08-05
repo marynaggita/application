@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
-import Form from "./Form";
-import FormLogin from "./FormLogin";
+import Form from "./Components/Signup/Form";
+import FormLogin from "./Components/Login/FormLogin";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import LandingPage from "./LandingPage";
-import Dashboard from "./Dashboard";
+import LandingPage from "./Components/LandingPage/LandingPage";
+import Dashboard from "./Components/Dashboard/Dashboard";
+
 
 
 
@@ -13,11 +14,12 @@ function App() {
     <>
     <Router>
       <Switch>
+    
         <Route path ='/' exact component={LandingPage} />
         <Route path ='/Form'  component={Form} />
         <Route path ='/FormLogin'  component={FormLogin} />
         <Route path ='/Dashboard'  component={Dashboard} />
-        {/* <Route path ='/'  component={Dashboard} /> */}
+       
       </Switch>
     </Router>
   
