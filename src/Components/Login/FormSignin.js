@@ -1,10 +1,7 @@
 import React from 'react';
 import useSigninForm from './useSigninForm';
 import validate from '../Signup/validateInfo';
-import {Link} from  'react-router-dom';
-import { StepConnector } from '@material-ui/core';
-// import {connect}  from 'react-redux';
- 
+
 
 
 const FormSignin = ({submitForm}) => {

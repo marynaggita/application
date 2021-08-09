@@ -1,10 +1,13 @@
 import React from 'react';
 import '../Cards/Cards.css';
 import CardItem from '../Cards/CardItem';
+import Navbar from '../Navbar/NavBar1';
 
-function Course() {
+function Courses() {
   return (
+      
     <div className='cards'>
+        
         <div style={{fontSize:'20px',padding:'10px',background:'red'}}>
             <b>Contact us via Email: alternativesglobal@gmail.com  |   Director on +256-782397529</b>
             </div>
@@ -80,4 +83,4 @@ function Course() {
   );
 }
 
-export default Course;
+export default Courses;
