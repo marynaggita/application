@@ -150,7 +150,12 @@ function Price() {
                 <Button primary>Start Course</Button>
               </PricingCardInfo>
             </PricingCard>
-            <PricingCard>
+           
+          </PricingContainer>
+
+
+          <PricingContainer>
+          <PricingCard>
               <PricingCardInfo>
                 <PricingCardIcon>
                   <GiCutDiamond />
@@ -173,6 +178,8 @@ function Price() {
               </PricingCardInfo>
             </PricingCard>
           </PricingContainer>
+
+
         </PricingWrapper>
       </PricingSection>
     </IconContext.Provider>
