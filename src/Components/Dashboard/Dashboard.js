@@ -10,7 +10,7 @@ const Dashboard = () => {
     return (
         <div>
             <Navbar />
-            <div style={{fontSize:'20px',padding:'10px',background:'red'}}>
+            <div  style={{fontSize:'20px',padding:'10px',background:'red'}}>
             <b>Contact us via Email: alternativesglobal@gmail.com  |   Director on +256-782397529</b>
             </div><hr />
             <h1>What to expect in this platform</h1>

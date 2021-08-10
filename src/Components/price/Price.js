@@ -19,60 +19,157 @@ import {
   PricingCardFeatures,
   PricingCardFeature
 } from './priceEl';
+import Navbar from '../Navbar/NavBar1';
 
 function Price() {
   return (
     <IconContext.Provider value={{ color: '#a9b3c1', size: 64 }}>
+      <Navbar />
+      <div style={{fontSize:'20px',padding:'10px',background:'red'}}>
+            <b>Contact us via Email: alternativesglobal@gmail.com  |   Director on +256-782397529</b>
+            </div><hr />
       <PricingSection>
         <PricingWrapper>
-          <PricingHeading>Our Services</PricingHeading>
+          <PricingHeading>Short Courses</PricingHeading>
           <PricingContainer>
-            <PricingCard to='/sign-up'>
+            <PricingCard >
               <PricingCardInfo>
                 <PricingCardIcon>
                   <GiRock />
                 </PricingCardIcon>
-                <PricingCardPlan>Starter Pack</PricingCardPlan>
+                <PricingCardPlan>Gender and Project planning and Management</PricingCardPlan>
                 <PricingCardCost>$99.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
-                <PricingCardFeatures>
-                  <PricingCardFeature>100 New Users</PricingCardFeature>
-                  <PricingCardFeature>$10,000 Budget</PricingCardFeature>
-                  <PricingCardFeature>Retargeting analytics</PricingCardFeature>
-                </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
+                
+                <Button primary>Start Course</Button>
               </PricingCardInfo>
             </PricingCard>
-            <PricingCard to='/sign-up'>
+            <PricingCard >
               <PricingCardInfo>
                 <PricingCardIcon>
                   <GiCrystalBars />
                 </PricingCardIcon>
-                <PricingCardPlan>Gold Rush</PricingCardPlan>
+                <PricingCardPlan>Gender, social inclusion and Extractives</PricingCardPlan>
                 <PricingCardCost>$299.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
-                <PricingCardFeatures>
-                  <PricingCardFeature>1000 New Users</PricingCardFeature>
-                  <PricingCardFeature>$50,000 Budget</PricingCardFeature>
-                  <PricingCardFeature>Lead Gen Analytics</PricingCardFeature>
-                </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
+                
+                <Button primary>Start Course</Button>
               </PricingCardInfo>
             </PricingCard>
-            <PricingCard to='/sign-up'>
+            <PricingCard >
               <PricingCardInfo>
                 <PricingCardIcon>
                   <GiCutDiamond />
                 </PricingCardIcon>
-                <PricingCardPlan>Diamond Kings</PricingCardPlan>
+                <PricingCardPlan>21st Century skills every young person must have</PricingCardPlan>
                 <PricingCardCost>$999.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
-                <PricingCardFeatures>
-                  <PricingCardFeature>Unlimited Users</PricingCardFeature>
-                  <PricingCardFeature>Unlimited Budget</PricingCardFeature>
-                  <PricingCardFeature>24/7 Support</PricingCardFeature>
-                </PricingCardFeatures>
-                <Button primary>Enroll</Button>
+                
+                <Button primary>Start Course</Button>
+              </PricingCardInfo>
+            </PricingCard>
+          </PricingContainer>
+
+          <PricingContainer>
+            <PricingCard >
+              <PricingCardInfo>
+                <PricingCardIcon>
+                  <GiRock />
+                </PricingCardIcon>
+                <PricingCardPlan>GGrant Development, writing and Management</PricingCardPlan>
+                <PricingCardCost>$99.99</PricingCardCost>
+               
+                <Button primary>Start Course</Button>
+              </PricingCardInfo>
+            </PricingCard>
+            <PricingCard >
+              <PricingCardInfo>
+                <PricingCardIcon>
+                  <GiRock />
+                </PricingCardIcon>
+                <PricingCardPlan>Leadership Etiquete and Traction</PricingCardPlan>
+                <PricingCardCost>$99.99</PricingCardCost>
+               
+                <Button primary>Start Course</Button>
+              </PricingCardInfo>
+            </PricingCard>
+            
+            <PricingCard >
+              <PricingCardInfo>
+                <PricingCardIcon>
+                  <GiCrystalBars />
+                </PricingCardIcon>
+                <PricingCardPlan>Gender, social inclusion and Extractives</PricingCardPlan>
+                <PricingCardCost>$299.99</PricingCardCost>
+                
+                <Button primary>Start Course</Button>
+              </PricingCardInfo>
+            </PricingCard>
+            
+            <PricingCard>
+              <PricingCardInfo>
+                <PricingCardIcon>
+                  <GiCutDiamond />
+                </PricingCardIcon>
+                <PricingCardPlan>Developing Impactful Youth Programs</PricingCardPlan>
+                <PricingCardCost>$999.99</PricingCardCost>
+                
+                <Button primary>Start Course</Button>
+              </PricingCardInfo>
+            </PricingCard>
+          </PricingContainer>
+
+          <PricingContainer>
+            <PricingCard >
+              <PricingCardInfo>
+                <PricingCardIcon>
+                  <GiRock />
+                </PricingCardIcon>
+                <PricingCardPlan>Dealing with attitudes and mindsets</PricingCardPlan>
+                <PricingCardCost>$99.99</PricingCardCost>
+               
+                <Button primary>Start Course</Button>
+              </PricingCardInfo>
+            </PricingCard>
+            <PricingCard >
+              <PricingCardInfo>
+                <PricingCardIcon>
+                  <GiCrystalBars />
+                </PricingCardIcon>
+                <PricingCardPlan>Mental health amidst pandemics</PricingCardPlan>
+                <PricingCardCost>$299.99</PricingCardCost>
+                
+                <Button primary>Start Course</Button>
+              </PricingCardInfo>
+            </PricingCard>
+            <PricingCard>
+              <PricingCardInfo>
+                <PricingCardIcon>
+                  <GiCutDiamond />
+                </PricingCardIcon>
+                <PricingCardPlan>Mental health and Money</PricingCardPlan>
+                <PricingCardCost>$999.99</PricingCardCost>
+                
+                <Button primary>Start Course</Button>
+              </PricingCardInfo>
+            </PricingCard>
+            <PricingCard>
+              <PricingCardInfo>
+                <PricingCardIcon>
+                  <GiCutDiamond />
+                </PricingCardIcon>
+                <PricingCardPlan>Young people’s mental health</PricingCardPlan>
+                <PricingCardCost>$999.99</PricingCardCost>
+                
+                <Button primary>Start Course</Button>
+              </PricingCardInfo>
+            </PricingCard>
+            <PricingCard>
+              <PricingCardInfo>
+                <PricingCardIcon>
+                  <GiCutDiamond />
+                </PricingCardIcon>
+                <PricingCardPlan>Mental health in the workplaces</PricingCardPlan>
+                <PricingCardCost>$999.99</PricingCardCost>
+                
+                <Button primary>Start Course</Button>
               </PricingCardInfo>
             </PricingCard>
           </PricingContainer>
