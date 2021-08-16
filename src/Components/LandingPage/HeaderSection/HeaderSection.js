@@ -10,7 +10,7 @@ const HeaderSection = () => {
             <h1>Welcome to the Global Alternatives Learning Platform.</h1>
             <p>Get started by creating an account or signing in</p>
             <div className='landing-btns'>
-            <Link to='/Form' className='btn-mobile'>
+            <Link to='/SignUpForm' className='btn-mobile'>
                 <Button 
                 className='btns'
                 buttonStyle='btn--outline'
@@ -18,7 +18,7 @@ const HeaderSection = () => {
                      SIGN UP                   
                 </Button>
             </Link>
-            <Link to='/FormLogin' className='btn-mobile'>
+            <Link to='/Signin' className='btn-mobile'>
                 <Button 
                 className='btns'
                 buttonStyle='btn--primary'

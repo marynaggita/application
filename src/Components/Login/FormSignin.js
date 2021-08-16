@@ -1,11 +1,11 @@
 import React from 'react';
 import useSigninForm from './useSigninForm';
-import validate from '../Signup/validateInfo';
+
 
 
 
 const FormSignin = ({submitForm}) => {
-    const {handleChange, values, handleSubmit, errors  } = useSigninForm(submitForm, validate);
+    const {handleChange, values, handleSubmit, errors  } = useSigninForm(submitForm);
     return (
         // <div className='form-content'>
             <form className='form' onSubmit={handleSubmit}>
