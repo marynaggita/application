@@ -5,10 +5,7 @@ import CardItem from './CardItem';
 function Cards() {
   return (
     <div className='cards'>
-      <h1>Our Vision</h1>
-      <h2>Becoming a leader in Innovations for humanity and development</h2>
-      <h1>Our Mission</h1>
-      <h2>Saving lives Now and for the future generations and providing alternatives and programs that work BEST.</h2>
+      
       <h1>Check out services provided!</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>

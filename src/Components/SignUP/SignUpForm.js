@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import validationInfo from './validateInfo';
+import SignIn from "../login/signin";
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -222,15 +223,13 @@ export default function SignUpForm({submitForm}) {
             variant="contained"
             color="primary"
             onClick={onSubmit}
-
-            
             className={classes.submit}
           >
             Sign Up
           </Button>
           <Grid container justifyContent="center">
             <Grid item>
-              <Link href="#" variant="body2">
+              <Link href="/SignIn" variant="body2">
                 Already have an account? Sign in
               </Link>
             </Grid>

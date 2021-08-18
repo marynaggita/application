@@ -42,7 +42,9 @@ function Navbar() {
         <Nav>
           <NavbarContainer>
             <NavLogo to='/' onClick={closeMobileMenu}>
+            <img src="./images/logo.svg" alt=""  width="100"/>
               GLOBAL ALTERNATIVES
+              
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
@@ -65,11 +67,11 @@ function Navbar() {
               </NavItem>
               <NavItemBtn>
                 {button ? (
-                  <NavBtnLink to='/Price'>
+                  <NavBtnLink to='/SignIn'>
                     <Button primaryprice>SIGN UP</Button>
                   </NavBtnLink>
                 ) : (
-                  <NavBtnLink to='/Price'>
+                  <NavBtnLink to='/SignUp'>
                     <Button onClick={closeMobileMenu} fontBig primary>
                       SIGN UP
                     </Button>
