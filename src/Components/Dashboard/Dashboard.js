@@ -1,7 +1,6 @@
 import React from 'react';
 // import Courses from './Components/Courses/index';
 import Navbar from '../Navbar/NavBar1';
-import Course from '../Courses/Courses';
 import Footer from '../Footer/Footer';
 
 

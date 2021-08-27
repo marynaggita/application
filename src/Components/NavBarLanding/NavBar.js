@@ -42,12 +42,17 @@ function Navbar() {
         <Nav>
           <NavbarContainer>
             <NavLogo to='/' onClick={closeMobileMenu}>
-               <img src="/images/logo.svg" alt=" " width="130"/> GLOBAL ALTERNATIVES
+               <img src="/images/logo.svg" alt=" " width="130"/> Global Alternatives Online Platform
             </NavLogo>
             <MobileIcon onClick={handleClick}>
-              {click ? <FaTimes color="red" /> : <FaBars color="red" />}
+              {click ? <FaTimes color="white" /> : <FaBars color="white" />}
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
+              <NavItem>
+                <NavLinks to='/About' onClick={closeMobileMenu}>
+                  About Us
+                </NavLinks>
+              </NavItem>
               <NavItemBtn>
                 {button ? (
                   <NavBtnLink to='/SignUp'>

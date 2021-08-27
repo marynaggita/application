@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '../../globalStyles';
+import {Link } from 'react-router-dom'
 
 
 export const AnswerYo = () => (
@@ -9,5 +10,6 @@ export const AnswerYo = () => (
     <p>We provide analytical and researched information.</p>
     <p>Sign up here to know more about this</p>
     <Button> Signup here</Button>
+    <Link to="./pages">boom</Link>
   </div>
 )

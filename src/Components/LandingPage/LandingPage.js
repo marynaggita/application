@@ -10,6 +10,7 @@ const LandingPage = () => {
         <div>
             <Navbar />
             <HeroSection />
+            
             <Cards />
             <Footer />
         </div>

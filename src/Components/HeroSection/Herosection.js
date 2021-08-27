@@ -24,6 +24,7 @@ export default function HeroSection() {
       </div>
       <img src="./images/Online.jpg" alt=""/>
     </section>
+    <br />
   </>
   )
 }

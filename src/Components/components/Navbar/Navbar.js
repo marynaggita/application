@@ -13,7 +13,7 @@ import {
   NavItemBtn,
   NavLinks,
   NavBtnLink
-} from './NavBarEl';
+} from './Navbar.elements';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -42,38 +42,50 @@ function Navbar() {
         <Nav>
           <NavbarContainer>
             <NavLogo to='/' onClick={closeMobileMenu}>
-            <img src="./images/logo.svg" alt=""  width="100"/>
-              Global Alternatives Online Platform
-              
+              <NavIcon />
+              ULTRA
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to='/ShortCourses' onClick={closeMobileMenu}>
-                  Courses
+                <NavLinks to='/' onClick={closeMobileMenu}>
+                  Home
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='/AnswerYo' onClick={closeMobileMenu}>
-                  AnswerYoApp
+                <NavLinks to='/services' onClick={closeMobileMenu}>
+                  Services
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='/Services' onClick={closeMobileMenu}>
-                  Consultancy Services 
+                <NavLinks to='/products' onClick={closeMobileMenu}>
+                  Products
                 </NavLinks>
               </NavItem>
               <NavItemBtn>
                 {button ? (
-                  <NavBtnLink to='/SignIn'>
-                    <Button primaryprice>SIGN UP</Button>
+                  <NavBtnLink to='/sign-up'>
+                    <Button primary>SIGN UP</Button>
                   </NavBtnLink>
                 ) : (
-                  <NavBtnLink to='/SignUp'>
+                  <NavBtnLink to='/sign-up'>
                     <Button onClick={closeMobileMenu} fontBig primary>
                       SIGN UP
+                    </Button>
+                  </NavBtnLink>
+                )}
+              </NavItemBtn>
+              <NavItemBtn>
+                {button ? (
+                  <NavBtnLink to='/courses'>
+                    <Button primary>Courses</Button>
+                  </NavBtnLink>
+                ) : (
+                  <NavBtnLink to='/courses'>
+                    <Button onClick={closeMobileMenu} fontBig primary>
+                      Courses
                     </Button>
                   </NavBtnLink>
                 )}

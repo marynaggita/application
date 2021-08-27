@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Container } from '../../globalStyles';
 
 export const Nav = styled.nav`
-  background: #f5f5f5;
+  background: #101522;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -24,11 +24,11 @@ export const NavbarContainer = styled(Container)`
 `;
 
 export const NavLogo = styled(Link)`
-  color: #000;
+  color: #fff;
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
 `;
@@ -99,7 +99,7 @@ export const NavItemBtn = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  color: #000;
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;

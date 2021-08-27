@@ -6,7 +6,7 @@ section{
     align-content: center;
     background-color: rgb(255, 255, 255);
     
-    margin-top: 0px;
+    margin-top: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -37,7 +37,8 @@ img {
         display: none;
     }
     #main {
-        display: block ;
+        display: block ;    
+        
     }
 }
 
