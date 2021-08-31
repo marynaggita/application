@@ -6,7 +6,7 @@ import Dashboard from "./Components/Dashboard/Dashboard";
 import { AnswerYo } from "./Components/AnswerYo/answeryo";
 import Services from "./Components/Services/Services"
 import Checkout from "./Components/CheckOut/Checkout";
-import SignIn from "./Components/login/signin";
+import SignIn from "./Components/login/signinForm";
 import SignUp from "./Components/SignUP/SignUp";
 import SignUpForm from "./Components/SignUP/SignUpForm";
 import Reset from "./Components/PasswordReset/Reset";

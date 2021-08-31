@@ -28,8 +28,8 @@ export default function validationInfo(values){
     if(!values.phone){
         errors.phone = 'Phone number is required';
     }
-    if(!values.date){
-        errors.date = 'Date of birth is required';
+    if(!values.age){
+        errors.age = 'Age range is required';
     }
 
     return errors;

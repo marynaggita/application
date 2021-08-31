@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import validationInfo from './validateInfo';
-import SignIn from "../login/signin";
+import SignIn from "../login/signinForm";
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -14,6 +14,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { FormControl, FormLabel, Radio, RadioGroup } from '@material-ui/core';
+import { Select, MenuItem , InputLabel} from '@material-ui/core';
 
 function Copyright() {
   return (
@@ -46,6 +47,10 @@ const useStyles = makeStyles((theme) => ({
   submit: {
     margin: theme.spacing(3, 0, 2),
   },
+  formControl: {
+    margin: theme.spacing(1),
+    minWidth:390
+  }
 }));
 
 export default function SignUpForm({submitForm}) {
@@ -56,6 +61,7 @@ export default function SignUpForm({submitForm}) {
         password: '',
         password2: '',
         phone: '',
+        age: '',
         date: '',
         gender: ''
      })
@@ -181,10 +187,24 @@ export default function SignUpForm({submitForm}) {
               />
               {errors.phone && <p className="errors">{errors.phone}</p>}
             </Grid>
+                        
+            <Grid item xs={12}>
+              <FormControl className={classes.formControl} component="fieldset" required >
+              <InputLabel>Age range</InputLabel>
+                <Select name="age"value={values.value} onChange={handleChange}>
+                  <MenuItem value="13-24 years">13-24 years</MenuItem>
+                  <MenuItem value="25-35 years">25-35 years</MenuItem>
+                  <MenuItem value="36-45 years">36-45 years</MenuItem>
+                  <MenuItem value="46-60 years">46-60 years</MenuItem>
+                  <MenuItem value="Above 60 years">Above 60 years</MenuItem>
+                </Select>
+              </FormControl>
+              {errors.age && <p className="errors">{errors.age}</p>}
+            </Grid>
+
             <Grid item xs={12}>
               <TextField
                 variant="outlined"
-                required
                 fullWidth
                 name="date"
                 label="Date of Birth"
@@ -197,8 +217,8 @@ export default function SignUpForm({submitForm}) {
                 value={values.date}
                 onChange={handleChange} 
               />
-              {errors.date && <p className="errors">{errors.date}</p>}
             </Grid>
+
             <Grid item xs={12}>
             <FormControl component="fieldset" required>
                     <FormLabel component="legend">Gender</FormLabel>
@@ -220,7 +240,7 @@ export default function SignUpForm({submitForm}) {
           <Button
             type="submit"
             fullWidth
-            variant="contained"
+            variant="outlined"
             color="primary"
             onClick={onSubmit}
             className={classes.submit}

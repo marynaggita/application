@@ -12,6 +12,7 @@ const Dashboard = () => {
             <div  style={{fontSize:'20px',padding:'10px',background:'red'}}>
             <b>Contact us via Email: alternativesglobal@gmail.com  |   Director on +256-782397529</b>
             </div><hr />
+            <h5>Welcome </h5>
             <h1>What to expect in this platform</h1>
             <h3>The Global Online Learning Platform is  a multifaceted space where you can </h3>
             <h4>Take a short course in Leadership and Management, Finance management, Gender, youth, children and social inclusion issues, Entrepreneurship among others.</h4>

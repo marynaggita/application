@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
+import { useDispatch } from 'react-redux';
+import { logout, selectUser } from '../../features/userSlice';
 import { Button } from '../../globalStyles';
 import {
   Nav,
@@ -28,6 +30,17 @@ function Navbar() {
     } else {
       setButton(true);
     }
+  };
+  
+
+  const dispatch = useDispatch();
+
+  const handleLogout = (e) => {
+    e.preventDefault();
+
+   
+    dispatch(logout());
+
   };
 
   useEffect(() => {
@@ -67,13 +80,13 @@ function Navbar() {
               </NavItem>
               <NavItemBtn>
                 {button ? (
-                  <NavBtnLink to='/SignIn'>
-                    <Button primaryprice>SIGN UP</Button>
+                  <NavBtnLink to='/'> 
+                    <Button primaryprice onClick={(e) => handleLogout(e)}>LOGOUT</Button>
                   </NavBtnLink>
                 ) : (
                   <NavBtnLink to='/SignUp'>
-                    <Button onClick={closeMobileMenu} fontBig primary>
-                      SIGN UP
+                    <Button onClick={closeMobileMenu} onClick={(e) => handleLogout(e)} fontBig primary >
+                      LOGOUT
                     </Button>
                   </NavBtnLink>
                 )}
