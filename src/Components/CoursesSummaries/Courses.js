@@ -53,7 +53,7 @@ function CoursesSection({
                 <How lightHow={lightHow}>{how}</How>
                 <Time lightTime={lightTime}><span>Duration:</span> {time}</Time>
                 <Price lightPrice={lightPrice}><span>Fee: </span>{price}</Price>
-                <Link to='/sign-up'>
+                <Link to='/checkout'>
                   <Button big fontBig primary={primary}>
                     Pay for enrolment
                   </Button>

@@ -5,11 +5,11 @@ import { selectUser } from '../../features/userSlice';
 import SignIn from './signinForm';
 
 const Signin = () => {
-const user = useSelector(selectUser);
+const [user, setUser] = useState('');
 
     return (
         <>
-            {user ? <Dashboard /> : <SignIn />}
+            <SignIn />
         </>
     )
 }

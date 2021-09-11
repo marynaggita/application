@@ -53,7 +53,7 @@ export const TopLine1 = styled.h1`
 
 
 export const TopLine = styled.div`
-  color: ${({ lightTopLine }) => (lightTopLine ? '#0000FF' : '#0000FF')};
+  color: ${({ lightTopLine }) => (lightTopLine ? '#ff0000' : '#ff0000')};
   font-size: 50px;
   line-height: 45px;
   font-weight: 700;

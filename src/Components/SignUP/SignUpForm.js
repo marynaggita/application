@@ -199,7 +199,7 @@ export default function SignUpForm({submitForm}) {
                   <MenuItem value="Above 60 years">Above 60 years</MenuItem>
                 </Select>
               </FormControl>
-              {errors.age && <p className="errors">{errors.age}</p>}
+              {errors.age && <p color='red' className="errors">{errors.age}</p>}
             </Grid>
 
             <Grid item xs={12}>
@@ -227,7 +227,7 @@ export default function SignUpForm({submitForm}) {
                         <FormControlLabel value="male" control={<Radio />} label="Male" />
                     </RadioGroup>
                </FormControl>
-               {errors.gender && <p className="errors">{errors.gender}</p>}
+               {errors.gender && <p color='red' className="errors">{errors.gender}</p>}
             </Grid>
             
             <Grid item xs={12}>

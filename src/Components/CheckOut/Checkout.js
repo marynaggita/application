@@ -19,7 +19,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Global Alternatives
+        Global Alternatives Online Platform
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -97,7 +97,7 @@ export default function Checkout() {
       <AppBar position="absolute" color="default" className={classes.appBar}>
         <Toolbar>
           <Typography variant="h6" color="inherit" noWrap>
-            Company name
+            Global Alternatives Online Platform
           </Typography>
         </Toolbar>
       </AppBar>

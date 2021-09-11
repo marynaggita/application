@@ -176,6 +176,7 @@ export default function ShortCourses() {
          </Typography>
       </Container>
       {/* End hero unit */}
+      
       <Container maxWidth="md" component="main">
         <Grid container spacing={5} alignItems="flex-end">
           {tiers.map((tier) => (

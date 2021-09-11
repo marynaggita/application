@@ -1,0 +1,31 @@
+section{
+    margin: 0 120px;
+}
+
+#main{
+    align-content: center;
+    display: block
+}
+
+
+#main .title {
+    margin-bottom: 15px;
+    padding: 0 15px;
+    font-size:50px ;
+    font-weight: 700;
+    margin-top: 20px;
+    
+}
+#main .subheading {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 20pt;
+    color: rgb(255, 0, 0);
+    
+
+}
+#main .notes {
+    font-size: 16px;
+
+}

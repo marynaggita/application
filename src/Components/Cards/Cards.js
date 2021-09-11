@@ -41,7 +41,7 @@ function Cards() {
             <CardItem
               src='images/gender.jpg'
               text='Explore the concept that addresses improving access to livelihood assets and services for ALL, including the women, poor, and excluded.'
-              label='Social inclusion and Gender'
+              label='l inclusion and Gender'
               path='/shortcourses'
               
             />

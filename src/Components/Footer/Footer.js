@@ -45,7 +45,7 @@ return (
 		<Column>
 		<img src='img/logo.svg' alt='logo'
                 style={{width:"100%"}} /> 
-			<span style={{color:"aqua",paddingTop:"40px"}} >&copy;{new Date().getFullYear()} Global Alternatives Learning Platform</span>
+			<span style={{color:"black",paddingTop:"40px"}} >&copy;{new Date().getFullYear()} Global Alternatives Learning Platform</span>
 		</Column>
 		</Row>
 	</Container>

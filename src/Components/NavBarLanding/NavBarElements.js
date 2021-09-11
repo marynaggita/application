@@ -5,7 +5,7 @@ import { Container } from '../../globalStyles';
 
 export const Nav = styled.nav`
   background: #f5f5f7; 
-  height: 80px;
+  height: 80px;000
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,6 +37,7 @@ export const NavLogo = styled(Link)`
 
 export const NavIcon = styled(FaMagento)`
   margin-right: 0.5rem;
+  
 `;
 
 export const MobileIcon = styled.div`
@@ -70,7 +71,7 @@ export const NavMenu = styled.ul`
     left: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
     transition: all 0.5s ease;
-    background: #101522;
+    background: #fff;
   }
 `;
 

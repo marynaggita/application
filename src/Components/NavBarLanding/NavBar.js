@@ -41,8 +41,8 @@ function Navbar() {
       <IconContext.Provider value={{ color: '#fff' }}>
         <Nav>
           <NavbarContainer>
-            <NavLogo to='/' onClick={closeMobileMenu}>
-               <img src="/images/logo.svg" alt=" " width="130"/> Global Alternatives Online Platform
+            <NavLogo  onClick={closeMobileMenu}>
+               <img src="/images/logo.svg" alt=" " width="130" noWrap/> Global Alternatives Online Platform 
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes color="white" /> : <FaBars color="white" />}

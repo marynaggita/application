@@ -2,10 +2,11 @@
 
   export const Box = styled.div`
   padding: 80px 60px;
-  background: black;
+  background: ;
   position: absolute;
   bottom: 20;
   width: 100%;
+
   
   
   @media (max-width: 1000px) {
@@ -19,7 +20,7 @@
     justify-content: center;
     max-width: 1000px;
     margin: 0 auto;
-    /* background: red; */
+   
   `
   
   export const Column = styled.div`
@@ -42,7 +43,7 @@
   `;
   
   export const FooterLink = styled.a`
-  color: #fff;
+  color: #000;
   margin-bottom: 20px;
   font-size: 18px;
   text-decoration: none;

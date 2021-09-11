@@ -4,6 +4,7 @@ import { IconContext } from 'react-icons/lib';
 import { useDispatch } from 'react-redux';
 import { logout, selectUser } from '../../features/userSlice';
 import { Button } from '../../globalStyles';
+import { useSelector } from 'react-redux';
 import {
   Nav,
   NavbarContainer,
@@ -32,17 +33,6 @@ function Navbar() {
     }
   };
   
-
-  const dispatch = useDispatch();
-
-  const handleLogout = (e) => {
-    e.preventDefault();
-
-   
-    dispatch(logout());
-
-  };
-
   useEffect(() => {
     showButton();
   }, []);
@@ -56,7 +46,7 @@ function Navbar() {
           <NavbarContainer>
             <NavLogo to='/' onClick={closeMobileMenu}>
             <img src="./images/logo.svg" alt=""  width="100"/>
-              Global Alternatives Online Platform
+              <span>Global Alternatives Online Platform</span>
               
             </NavLogo>
             <MobileIcon onClick={handleClick}>
@@ -64,7 +54,7 @@ function Navbar() {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to='/ShortCourses' onClick={closeMobileMenu}>
+                <NavLinks to='/courselist' onClick={closeMobileMenu}>
                   Courses
                 </NavLinks>
               </NavItem>
@@ -81,11 +71,11 @@ function Navbar() {
               <NavItemBtn>
                 {button ? (
                   <NavBtnLink to='/'> 
-                    <Button primaryprice onClick={(e) => handleLogout(e)}>LOGOUT</Button>
+                    <Button primaryprice >LOGOUT</Button>
                   </NavBtnLink>
                 ) : (
                   <NavBtnLink to='/SignUp'>
-                    <Button onClick={closeMobileMenu} onClick={(e) => handleLogout(e)} fontBig primary >
+                    <Button onClick={closeMobileMenu}  fontBig primary >
                       LOGOUT
                     </Button>
                   </NavBtnLink>
