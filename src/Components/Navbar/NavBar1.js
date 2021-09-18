@@ -5,6 +5,8 @@ import { useDispatch } from 'react-redux';
 import { logout, selectUser } from '../../features/userSlice';
 import { Button } from '../../globalStyles';
 import { useSelector } from 'react-redux';
+import { connect } from 'react-redux';
+import { signOut } from '../../store/actions/authActions';
 import {
   Nav,
   NavbarContainer,
@@ -18,7 +20,7 @@ import {
   NavBtnLink
 } from './NavBarEl';
 
-function Navbar() {
+function Navbar(props) {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -39,6 +41,7 @@ function Navbar() {
 
   window.addEventListener('resize', showButton);
 
+  
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
@@ -70,15 +73,15 @@ function Navbar() {
               </NavItem>
               <NavItemBtn>
                 {button ? (
-                  <NavBtnLink to='/'> 
-                    <Button primaryprice >LOGOUT</Button>
-                  </NavBtnLink>
+                  
+                    <Button primaryprice onClick={props.signOut} >LOGOUT</Button>
+                  
                 ) : (
-                  <NavBtnLink to='/SignUp'>
-                    <Button onClick={closeMobileMenu}  fontBig primary >
+                  
+                    <Button onClick={closeMobileMenu} onClick={props.signOut}  fontBig primary >
                       LOGOUT
                     </Button>
-                  </NavBtnLink>
+                  
                 )}
               </NavItemBtn>
             </NavMenu>
@@ -89,4 +92,10 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+const mapDispatchToProps = (dispatch) => {
+  return {
+  signOut: () => dispatch(signOut())
+  }
+}
+
+export default connect(null, mapDispatchToProps)(Navbar);

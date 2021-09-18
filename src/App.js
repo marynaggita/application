@@ -18,13 +18,13 @@ import GrantDevelopment from "./pages/CoursePage/GrantDevelopment";
 import MentalHealth from "./pages/CoursePage/MentalHealth";
 import LeadershipEtiquette from "./pages/CoursePage/LeadershipEtiquette";
 import ImpactfulYouthPrograms from "./pages/CoursePage/ImpactfulYouthPrograms";
-import Album from "./Components/login/text";
 import Appbar from "./Components/Appbar/appbarLanding";
 import CoursePersonalized from "./Components/Cards/Cardsp";
 import CardTest from "./Components/Cards/CardsTrial";
 import CourseTest from "./Components/Cards/CardsFullTrial";
 import Course from "./Components/CourseSection/Course";
 import { About } from "./Components/About/About";
+
 
 
 function App() {
@@ -52,17 +52,12 @@ function App() {
         <Route path = '/LeadershipEtiquette' component= {LeadershipEtiquette} />
         <Route path = '/ImpactfulYouthPrograms' component= {ImpactfulYouthPrograms} />
         <Route path = '/checkout' component={Checkout} />
-        <Route path='/album'  component={Album} />
         <Route path='/appbar'  component={Appbar} />
         <Route path='/coursePersonal'  component={CoursePersonalized} />
         <Route path='/cardtest'  component={CardTest} />
         <Route path='/coursetest'  component={CourseTest} />
         <Route path ='/courselist' component={Course}  />
         <Route path ='/About' component={About}  />
-        
-        
-
-        
        
       </Switch>
     </Router>

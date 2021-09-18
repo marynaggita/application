@@ -1,7 +1,11 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Button } from '../../globalStyles';
+import Appbar from '../Appbar/appbarLanding';
 import {
+  Column1,
+  Column2,
   InfoSec,
   InfoRow,
   InfoColumn,
@@ -14,7 +18,8 @@ import {
   Img,
   Time,
   Price,
-  How
+  How,
+  ImgCover
 } from './Courses.elements';
 
 function CoursesSection({
@@ -38,15 +43,16 @@ function CoursesSection({
   price,
   lightHow,
   how
+
 }) {
   return (
     <>
-      <InfoSec lightBg={lightBg}>
+    <Appbar />
+    <InfoSec>
         <Container>
-          
-              <TextWrapper>
+          {/* <InfoColumn> */}
+            <TextWrapper>
                 <TopLine1>Course Summary</TopLine1>
-                
                 <TopLine lightTopLine={lightTopLine}> {topLine}</TopLine>
                 <Heading lightText={lightText}><span>Target: </span>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}><span>What:</span> {description}</Subtitle>
@@ -58,10 +64,17 @@ function CoursesSection({
                     Pay for enrolment
                   </Button>
                 </Link>
-              </TextWrapper>
-          
+            </TextWrapper>
+            {/* </InfoColumn> */}
+            {/* <InfoColumn>
+              
+                <Img src='./images/Online.js' alt="" />
+              
+            </InfoColumn>
+        */}
         </Container>
-      </InfoSec>
+        </InfoSec>
+      
     </>
   );
 }

@@ -145,47 +145,8 @@ export default function CourseTest() {
     <React.Fragment>
       
       <CssBaseline />
-      {/* <AppBar position="relative">
-        <Toolbar>
-          <CameraIcon className={classes.icon} />
-          <Typography variant="h6" color="inherit" noWrap>
-            Album layout
-          </Typography>
-        </Toolbar>
-      </AppBar> */}
-      <div className={classes.paper}>
-        {/* Hero unit
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
-            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Album layout
-            </Typography>
-            <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Something short and leading about the collection below—its contents, the creator, etc.
-              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-              entirely.
-            </Typography>
-            <div className={classes.heroButtons}>
-              <Grid container spacing={2} justifyContent="center">
-                <Grid item>
-                  <Button variant="contained" color="primary">
-                    Main call to action
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button variant="outlined" color="primary">
-                    Secondary action
-                  </Button>
-                </Grid>
-              </Grid>
-            </div>
-          </Container>
-        </div> */}
-        <div className={classes.heroContent}>
-          <Container maxWidth="sm">
-            {/* <Typography component="h2" variant="h4" align="left" color="textPrimary" gutterBottom>
-              Album layout
-            </Typography> */}
             <Typography variant="h5" align="left" color="textPrimary" paragraph>
               Available courses
             </Typography>
@@ -206,7 +167,7 @@ export default function CourseTest() {
                   <CardContent className={classes.cardContent} >
                     <Typography 
                         gutterBottom 
-                        variant="h7" 
+                        variant="h6" 
                         component="h3"
                         >
                         {card.heading}
@@ -220,7 +181,7 @@ export default function CourseTest() {
                   
                   </CardContent>
                   <CardActions>
-                    <Link href={card.link}><Button variant="outlined" size="large" style={{ backgroundColor: '#e3d8d8', color: 'grey'}}>
+                    <Link href={card.link}><Button variant="outlined" size="large" style={{ backgroundColor: 'red', color: 'white'}}>
                       Start course
                     </Button></Link>
                     
@@ -230,18 +191,6 @@ export default function CourseTest() {
             ))}
           </Grid>
         </Container>
-      </div>
-      {/* Footer */}
-      {/* <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Something here to give the footer a purpose!
-        </Typography>
-        <Copyright />
-      </footer> */}
-      {/* End footer */}
     </React.Fragment>
   );
 }
