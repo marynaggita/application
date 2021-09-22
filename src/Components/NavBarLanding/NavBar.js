@@ -42,8 +42,10 @@ function Navbar() {
         <Nav>
           <NavbarContainer>
             <NavLogo  onClick={closeMobileMenu}>
-               <img src="/images/logo.svg" alt=" " width="130" noWrap/> Global Alternatives Online Platform 
+               <img src="/images/logo.svg" alt=" " width="130" noWrap/> 
+             Global Alternatives Online Platform
             </NavLogo>
+            
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes color="white" /> : <FaBars color="white" />}
             </MobileIcon>

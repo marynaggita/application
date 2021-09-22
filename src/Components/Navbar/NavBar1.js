@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
-import { useDispatch } from 'react-redux';
-import { logout, selectUser } from '../../features/userSlice';
 import { Button } from '../../globalStyles';
-import { useSelector } from 'react-redux';
 import { connect } from 'react-redux';
 import { signOut } from '../../store/actions/authActions';
 import {
@@ -16,8 +13,7 @@ import {
   NavMenu,
   NavItem,
   NavItemBtn,
-  NavLinks,
-  NavBtnLink
+  NavLinks
 } from './NavBarEl';
 
 function Navbar(props) {

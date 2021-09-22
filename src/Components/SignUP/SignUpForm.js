@@ -1,29 +1,20 @@
-import React, {useState, useEffect, Component} from 'react';
-import validationInfo from './validateInfo';
-import SignIn from "../login/signinForm";
-import Avatar from '@material-ui/core/Avatar';
-import Button from '@material-ui/core/Button';
+import React, { Component} from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import TextField from '@material-ui/core/TextField';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
+import { Button } from '@material-ui/core';
 import Checkbox from '@material-ui/core/Checkbox';
 import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { FormControl, FormLabel, Radio, RadioGroup } from '@material-ui/core';
 import { Select, MenuItem , InputLabel} from '@material-ui/core';
 import { TextValidator , ValidatorForm} from 'react-material-ui-form-validator';
-// import fire from '../../firebase';
-// import firebase from '../../firebase';
-import { FireplaceRounded } from '@material-ui/icons';
-
-import auth from 'firebase/auth'
 import { withStyles } from '@material-ui/core/styles';
 import { connect } from 'react-redux';
 import { signUp } from '../../store/actions/authActions'; 
+import { Redirect } from 'react-router-dom';
 
 
 function Copyright() {
@@ -67,6 +58,10 @@ const useStyles = theme => ({
   formControl: {
     margin: theme.spacing(1),
     minWidth:390
+  },
+  danger: {
+    color: 'red',
+    alignItems: 'center'
   }
 });
 
@@ -95,6 +90,7 @@ class SignUpForm extends Component{
 
   render(){
     const { classes,auth,authError } = this.props;
+    if (auth.uid) return <Redirect to='/'  />
     return (
       <Container component="main" maxWidth="xs">
         <CssBaseline />
@@ -126,26 +122,25 @@ class SignUpForm extends Component{
                   validators={['required']}
                   errorMessages={['This field is required']}
                 />
-                
-              
                 <TextValidator
+                  autoComplete="off"
+                  name="lastName"
                   variant="outlined"
+                  margin="normal"
                   fullWidth
                   id="lastName"
                   label="Last Name"
-                  Uname="lastName"
-                  type="password"
-                  margin="normal"
-                  autoComplete="off"
                   value={this.state.lastName}
                   onChange={this.handleChange} 
                   validators={['required']}
                   errorMessages={['This field is required']}
                 />
+                
+              
+                
         
                 <TextValidator
                   variant="outlined"
-                  type="password"
                   fullWidth
                   id="email"
                   label="Email Address"
@@ -207,13 +202,14 @@ class SignUpForm extends Component{
                   errorMessages={['This field is required']}  >
                 <InputLabel>Age range</InputLabel>
                   <Select name="age"value={this.state.age} onChange={this.handleChange}>
-                    <MenuItem age="13-24 years">13-24 years</MenuItem>
-                    <MenuItem age="25-35 years">25-35 years</MenuItem>
-                    <MenuItem age="36-45 years">36-45 years</MenuItem>
-                    <MenuItem age="46-60 years">46-60 years</MenuItem>
-                    <MenuItem age="Above 60 years">Above 60 years</MenuItem>
+                    <MenuItem value="13-24 years">13-24 years</MenuItem>
+                    <MenuItem value="25-35 years">25-35 years</MenuItem>
+                    <MenuItem value="36-45 years">36-45 years</MenuItem>
+                    <MenuItem value="46-60 years">46-60 years</MenuItem>
+                    <MenuItem value="Above 60 years">Above 60 years</MenuItem>
                   </Select>
                 </FormControl>
+                
                 <TextValidator
                   variant="outlined"
                   fullWidth
@@ -233,8 +229,8 @@ class SignUpForm extends Component{
               <FormControl component="fieldset" required>
                       <FormLabel component="legend">Gender</FormLabel>
                       <RadioGroup aria-label="gender" name="gender" style={{display:'initial'}} value={this.state.gender} onChange={this.handleChange} >
-                          <FormControlLabel gender="female" control={<Radio />} label="Female" />
-                          <FormControlLabel gender="male" control={<Radio />} label="Male" />
+                          <FormControlLabel value="female" control={<Radio />} label="Female" />
+                          <FormControlLabel value="male" control={<Radio />} label="Male" />
                       </RadioGroup>
                  </FormControl>
                             
@@ -247,14 +243,14 @@ class SignUpForm extends Component{
             <Button
               type="submit"
               fullWidth
-              variant="outlined"
+              variant="contained"
               color="primary"
               className={classes.submit}
               
             >
               Sign Up
             </Button>
-            <div className = "red-text center">
+            <div className={classes.danger}>
               { authError ? <p>{authError}</p> : null}
             </div> 
             <Grid container justifyContent="center">
@@ -282,9 +278,9 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = (state) => {
+const mapDispatchToProps = (dispatch) => {
   return {
-    signUp: (newUser) => dispatchEvent(signUp(newUser))
+    signUp: (newUser) => dispatch(signUp(newUser))
   }
 }
 

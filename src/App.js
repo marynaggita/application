@@ -1,13 +1,12 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import LandingPage from "./Components/LandingPage/LandingPage";
-import Dashboard from "./Components/Dashboard/Dashboard";
+import LandingPage from "./pages/LandingPage";
+import Dashboard from "./pages/Dashboard";
 import { AnswerYo } from "./Components/AnswerYo/answeryo";
 import Services from "./Components/Services/Services"
 import Checkout from "./Components/CheckOut/Checkout";
 import SignIn from "./Components/login/signinForm";
-import SignUp from "./Components/SignUP/SignUp";
 import SignUpForm from "./Components/SignUP/SignUpForm";
 import Reset from "./Components/PasswordReset/Reset";
 import ShortCourses from "./Components/ShortCourses/ShortCourse2";
@@ -19,7 +18,6 @@ import MentalHealth from "./pages/CoursePage/MentalHealth";
 import LeadershipEtiquette from "./pages/CoursePage/LeadershipEtiquette";
 import ImpactfulYouthPrograms from "./pages/CoursePage/ImpactfulYouthPrograms";
 import Appbar from "./Components/Appbar/appbarLanding";
-import CoursePersonalized from "./Components/Cards/Cardsp";
 import CardTest from "./Components/Cards/CardsTrial";
 import CourseTest from "./Components/Cards/CardsFullTrial";
 import Course from "./Components/CourseSection/Course";
@@ -35,13 +33,12 @@ function App() {
       <Switch>
     
         <Route path ='/' exact component={LandingPage} />
-        <Route path ='/SignUpForm'  component={SignUpForm} />
+        <Route path ='/SignUp'  component={SignUpForm} />
         <Route path ='/Dashboard'  component={Dashboard} />
         <Route path ='/Services'  component={Services} />
         <Route path ='/AnswerYo'  component={AnswerYo} />
         <Route path ='/Checkout'  component={Checkout} />
         <Route path ='/Signin'  component={SignIn} />
-        <Route path = '/SignUp'  component ={SignUp} />
         <Route path = '/Reset'  component ={Reset} />
         <Route path = '/ShortCourses'  component ={ShortCourses} />
         <Route  path ='/SocialInclusionandGender'  component={SocialInclusionandGender} />
@@ -53,7 +50,6 @@ function App() {
         <Route path = '/ImpactfulYouthPrograms' component= {ImpactfulYouthPrograms} />
         <Route path = '/checkout' component={Checkout} />
         <Route path='/appbar'  component={Appbar} />
-        <Route path='/coursePersonal'  component={CoursePersonalized} />
         <Route path='/cardtest'  component={CardTest} />
         <Route path='/coursetest'  component={CourseTest} />
         <Route path ='/courselist' component={Course}  />

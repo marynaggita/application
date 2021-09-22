@@ -43,6 +43,7 @@ export const signUp = (newUser) => {
                 age: newUser.age,
                 date: newUser.date,
                 gender: newUser.gender
+            
             }).then(() => {
                 dispatch({ type: 'SIGNUP SUCCESS'})
             }).catch((err) => {
