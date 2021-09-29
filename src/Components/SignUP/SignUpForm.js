@@ -90,7 +90,7 @@ class SignUpForm extends Component{
 
   render(){
     const { classes,auth,authError } = this.props;
-    if (auth.uid) return <Redirect to='/'  />
+    if (auth.uid) return <Redirect to='/Dashboard'  />
     return (
       <Container component="main" maxWidth="xs">
         <CssBaseline />

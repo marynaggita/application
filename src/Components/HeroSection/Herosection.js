@@ -17,11 +17,11 @@ export default function HeroSection() {
         
         <div className="subtext">An interactive platform that supports learning at convenience.We aim to make a contribution to your knowledge base and be sure that you will gain a lot.</div>
         <br />
-       <Link to="/SignUp">
-          <Button >
+       
+          <Button onClick='/SignUp' >
             GET STARTED
           </Button>
-        </Link> 
+        
           
       </div>
       <img src="./images/Online.jpg" alt=""/>

@@ -12,7 +12,6 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import { withStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import {login} from '../../features/userSlice';
 
 import { useDispatch } from "react-redux"
 import { red } from '@material-ui/core/colors';
@@ -26,7 +25,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" >
-        Global Alternatives
+        Global Alternatives Online Platform
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}

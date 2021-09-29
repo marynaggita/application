@@ -88,9 +88,9 @@ export default function SignInSide() {
           <span>Consultancy Services.</span>
           </div>
           <div className={classes.subtext}>Enjoy the consultancy and capacity building services offered by a pool of academic and practising professionals from the fields of third sector,public,private and academia on this platform. </div>
-          <Link href="/SignUpForm"><Button>
+          <Button onClick='/SignUp' >
             CLICK TO START
-          </Button></Link>
+          </Button>
         </div>
       </Grid>
       

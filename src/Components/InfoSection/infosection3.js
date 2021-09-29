@@ -85,7 +85,7 @@ export default function SignInSide() {
           <div className={classes.subtext}>An interactive platform that supports learning
          at convenience.We aim to make a contribution to your knowledge base
           and be sure that you will gain a lot.</div>
-          <Button>
+          <Button onClick='/SignUp' >
             GET STARTED
           </Button>
         </div>

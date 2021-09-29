@@ -43,7 +43,7 @@ function Navbar(props) {
       <IconContext.Provider value={{ color: '#fff' }}>
         <Nav>
           <NavbarContainer>
-            <NavLogo to='/' onClick={closeMobileMenu}>
+            <NavLogo >
             <img src="./images/logo.svg" alt=""  width="100"/>
               <span>Global Alternatives Online Platform</span>
               

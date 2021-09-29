@@ -87,9 +87,9 @@ export default function InfoSection2() {
           <span>AnswerYo App Services.</span>
           </div>
           <div className={classes.subtext}>Get information about mental health services and products and this will boost your knowledge about keeping a sound mind. </div>
-          <Link href="/SignUpForm"><Button>
+          <Button onClick='/SignUp' >
             CLICK TO START
-          </Button></Link>
+          </Button>
           <Grid item xs={12} sm={12} md={6} className={classes.image} />
         </div>
       </Grid>

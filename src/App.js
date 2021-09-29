@@ -22,6 +22,8 @@ import CardTest from "./Components/Cards/CardsTrial";
 import CourseTest from "./Components/Cards/CardsFullTrial";
 import Course from "./Components/CourseSection/Course";
 import { About } from "./Components/About/About";
+import PricingContent from './Components/EmailVerification/EmailSent';
+import Album from "./Components/Album/album";
 
 
 
@@ -54,6 +56,9 @@ function App() {
         <Route path='/coursetest'  component={CourseTest} />
         <Route path ='/courselist' component={Course}  />
         <Route path ='/About' component={About}  />
+        <Route path ='/Price' component={PricingContent}  />
+        <Route path ='/album' component={Album}  />
+
        
       </Switch>
     </Router>
